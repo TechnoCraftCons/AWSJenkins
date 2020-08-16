@@ -8,6 +8,5 @@
             <class name="test.pageTests.RegistrationTest"/>
         </classes>
     </test>
-
 </suite>
 
