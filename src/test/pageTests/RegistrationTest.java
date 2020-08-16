@@ -35,7 +35,7 @@ public class RegistrationTest {
         rf.UserNameRequiredValidation();
     }
 
-    @Test(priority = 2,groups = "smoke")
+    @Test(priority = 2)
     public void PassWordIsRequired(){
         RegistrationFlow rf = new RegistrationFlow(driver);
         rf.RegisterUser("myUserName", "", "Welcome098", "abc@abc.com");

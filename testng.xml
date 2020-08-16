@@ -3,11 +3,6 @@
 
 <suite name="EaAppTestSuite">
     <test name="Smoke">
-        <groups>
-            <run>
-                <include name="smoke"/>
-            </run>
-        </groups>
         <classes>
             <class name="test.pageTests.HomePageTest"/>
             <class name="test.pageTests.RegistrationTest"/>

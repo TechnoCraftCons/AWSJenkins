@@ -25,7 +25,7 @@ public class HomePageTest {
     public void CleanUp(){
         driver.close();
     }
-    @Test(groups = "Smoke")
+    @Test()
     public void ClickAboutPage(){
         EAAppHomePageObjects hpo = new EAAppHomePageObjects(driver);
         HomePageAssertions hpa = new HomePageAssertions(driver);
