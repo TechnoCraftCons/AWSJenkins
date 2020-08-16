@@ -1,5 +1,6 @@
 package test.pageTests;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -12,7 +13,7 @@ public class RegistrationTest {
 
     @BeforeMethod
     public void SetUp(){
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\nebiy\\OneDrive\\Desktop\\JulyChromeDriver\\chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.get("http://eaapp.somee.com/");
         driver.manage().window().maximize();
